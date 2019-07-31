@@ -1,8 +1,15 @@
 {
  "loupan": {
-  "星海湾P26 Starview Bay": 624,
-  "观澜湾P4 Regalia Park": 88,
-  "海悦湾1 P29 Ataraxia Park 1": 1
+  "Chinese": {
+   "星海湾P26": 624,
+   "观澜湾P4": 88,
+   "海悦湾1 P29": 1
+  },
+  "English": {
+   "Starview Bay": 624,
+   "Regalia Park": 88,
+   "Ataraxia Park 1": 1
+  }
  },
  "date": {
   "2019-03": 14,
@@ -16,7 +23,7 @@
    "Chinese": {
     "星海湾P26": 88,
     "海悦湾1 P29": 1,
-    "观澜湾P4 ": 15
+    "观澜湾P4": 15
    },
    "English": {
     "Starview Bay": 88,
@@ -28,7 +35,7 @@
    "Chinese": {
     "星海湾P26": 147,
     "海悦湾1 P29": 0,
-    "观澜湾P4 ": 48
+    "观澜湾P4": 48
    },
    "English": {
     "Starview Bay": 147,
@@ -40,7 +47,7 @@
    "Chinese": {
     "星海湾P26": 151,
     "海悦湾1 P29": 0,
-    "观澜湾P4 ": 22
+    "观澜湾P4": 22
    },
    "English": {
     "Starview Bay": 151,
