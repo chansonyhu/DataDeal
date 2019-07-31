@@ -45,8 +45,8 @@ def key_analysis(loupan_key):
         #如果找到分割项，将标签分为中文和英文
         if not (split_p is None):
             h=split_p.span()[1]
-            Chinese=lab[0:h+1]
-            English=lab[h+1:]
+            Chinese=lab[0:h+1].strip()
+            English=lab[h+1:].strip()
             #如果英文部分很短，则不存在英文，设为demo
             if len(English)<=2:
                 English='Demo'
@@ -93,7 +93,7 @@ def generate_list(begin_date,end_date):
     
     return date_list
 
-def date_distribute_aly(data,start_date,end_date,num=2):
+def date_distribute_aly(data,start_date,end_date,numd=2):
     data_time=data['订单支付时间']
     row=data_time.index
     
@@ -123,7 +123,7 @@ def date_distribute_aly(data,start_date,end_date,num=2):
     target_date=[]
     now=datetime.date.today()
     target_date.append(now.strftime('%Y-%m'))
-    for i in range(num):
+    for i in range(numd):
         now=now+datetime.timedelta(days=-(now.day+2))
         target_date.append(now.strftime('%Y-%m'))
     month_freq={}
