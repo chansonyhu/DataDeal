@@ -11,9 +11,13 @@ import pandas as pd
 import re
 
 #将最初的excel数据取目标属性列，转化为字典数据并返回
-def excel_to_dict(filename="forest life用户.xls",interest_columns=['国家码','所属楼盘','注册时间']):
+def excel_to_dict(filename="forest life用户",interest_columns=['国家码','所属楼盘','注册时间']):
     #对表头属性进行判断设置
-    data_original = pd.read_excel(filename,header=0)
+    path="data/"
+    try:
+        data_original = pd.read_excel(path+filename+".xls",header=0)
+    except:
+        data_original = pd.read_excel(path+filename+".xlsx",header=0)
     #获取行列索引
     col=data_original.columns
     row=data_original.index
@@ -48,9 +52,13 @@ def generate_list(begin_date,end_date):
 
 #统计用户在国家地区层面上的分布，结果转为json存储
 def country_distribute_aly(data):
+    path="data/"
     data_country=data['国家码']
     #读取国家码对照文件，用于最终将国家码转为国家名
-    country_no=pd.read_excel("国家码.xls")[['国际域名缩写','电话代码']]
+    try:
+        country_no=pd.read_excel(path+"国家码.xls")[['国际域名缩写','电话代码']]
+    except:
+        country_no=pd.read_excel(path+"国家码.xlsx")[['国际域名缩写','电话代码']]
     country_no=country_no.dropna()
     dict_country = country_no.set_index('电话代码').T.to_dict('list')
     del country_no
@@ -161,7 +169,11 @@ def month_country(data,num=2):
 #        date_t=datetime.datetime.strptime(data_time[row[i]],"%Y-%m-%d")
 #        data['注册时间'][row[i]]=datetime.datetime(date_t.year,date_t.month,1,0,0)
     dict_receive=dict(list(data.groupby('month')))
-    country_no=pd.read_excel("国家码.xls")[['国际域名缩写','电话代码']]
+    path="data/"
+    try:
+        country_no=pd.read_excel(path+"国家码.xls")[['国际域名缩写','电话代码']]
+    except:
+        country_no=pd.read_excel(path+"国家码.xlsx")[['国际域名缩写','电话代码']]
     country_no=country_no.dropna()
     dict_country = country_no.set_index('电话代码').T.to_dict('list')
 
