@@ -154,6 +154,8 @@ def date_distribute_aly(data,sale_set,start_date,end_date,num=30):
     key_set=day_receive.keys()
     renew_key=key_analysis(sale_set)
     count=np.zeros([len(sale_set)])
+    
+    #当前日期往前推30天的统计，如果数据没更新，则把没有数据的新日期去掉
     for date in target_day:
         if date in key_set:
             day_freq[date]={}
@@ -165,8 +167,8 @@ def date_distribute_aly(data,sale_set,start_date,end_date,num=30):
                 No+=1
 #                date_freq[date.strftime("%Y-%m")][sale]=sale_distribute.count(sale)
             day_freq[date]=dict(sorted(day_freq[date].items(), key=lambda e: e[1],reverse=True)[:10])
-        else:
-            day_freq[date]=0
+#        else:
+#            day_freq[date]=0
     
 #    with open('cupon.json','w') as f:
 #        json.dump(date_freq,f)
@@ -183,7 +185,7 @@ if __name__ == '__main__':
     [data_dict,groupsales]=excel_to_dict()
     
     cupon_distribute=date_distribute_aly(data_dict,groupsales,"2018-10","2019-7")
-    with open('cupon.json','w',encoding='utf-8') as f:
+    with open('data/cupon.json','w',encoding='utf-8') as f:
         json.dump(cupon_distribute,f,indent=1,ensure_ascii=False)
     del data_dict,groupsales,cupon_distribute
     f.close()
