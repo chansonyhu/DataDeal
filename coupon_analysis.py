@@ -17,8 +17,8 @@ def key_analysis(sale_key):
         split_p=re.search('[\u4e00-\u9fa5] [a-zA-Z]',lab,re.A)
         if not (split_p is None):
             h=split_p.span()[0]+1
-            Chinese=lab[0:h+1]
-            English=lab[h+1:]
+            Chinese=lab[0:h+1].strip()
+            English=lab[h+1:].strip()
             if len(English)<=2:
                 English=Chinese
             else:
