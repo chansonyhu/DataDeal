@@ -208,7 +208,7 @@ if __name__ == '__main__':
     data_json['loupan distribute chinese']=chinese
     data_json['loupan distribute english']=english
     data_json['Time distribute']=date_distribute_aly(data_dict,"2017-1","2019-7")
-    with open('APPuser_distribute.json','w',encoding='utf-8') as f:
+    with open('data/APPuser_distribute.json','w',encoding='utf-8') as f:
         json.dump(data_json,f,indent=1,ensure_ascii=False)
     f.close()
     del data_dict,data_frame,data_json,chinese,english
