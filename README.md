@@ -1,5 +1,1 @@
-Get the data excel in a template
-
-Put the data excel in the folder
-
-run the code to get json results
+程序基于excel格式数据开展统计，excel格式以智慧管理平台下载报表格式为准
