@@ -7,6 +7,8 @@ excel文件名已经在程序里面写死，所以需要按照程序里面指定
 
 数据更新时，只需要将新数据按照对应的列对齐拷贝到原本excel文件旧数据的后面即可。
 
+excel文件都统一放到data文件夹中，生成json文件也将放到data文件夹内
+
 
 
 excel_to_json_user_distribute.py:
