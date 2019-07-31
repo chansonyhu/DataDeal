@@ -90,8 +90,8 @@ def key_analysis(loupan_key):
         split_p=re.search('P\d',lab)
         if not (split_p is None):
             h=split_p.span()[1]
-            Chinese=lab[0:h+1]
-            English=lab[h+1:]
+            Chinese=lab[0:h+1].strip()
+            English=lab[h+1:].strip()
             if len(English)<=2:
                 English='Demo'
             else:
