@@ -16,8 +16,8 @@ def key_analysis(loupan_key):
         split_p=re.search('P\d',lab)
         if not (split_p is None):
             h=split_p.span()[1]
-            Chinese=lab[0:h+1]
-            English=lab[h+1:]
+            Chinese=lab[0:h+1].strip()
+            English=lab[h+1:].strip()
             if len(English)<=2:
                 English='Demo'
             else:
@@ -88,9 +88,15 @@ def date_distribute_aly(data,start_date,end_date):
     target_date=generate_list(start_date,end_date)
     date_freq={}
     key_set=dict_receive.keys()
-    loupan_set=dict(list(data.groupby('楼盘名称'))).keys()
-    date_freq['Set']=list(loupan_set)
-    renew_key=key_analysis(date_freq['Set'])
+    loupan_set=list(dict(list(data.groupby('楼盘名称'))).keys())
+    date_freq['Set']={}
+    renew_key=key_analysis(loupan_set)
+    date_freq['Set']['Chinese']=[]
+    date_freq['Set']['English']=[]
+    for loupan in loupan_set:
+        date_freq['Set']['Chinese'].append(renew_key[loupan][0])
+        date_freq['Set']['English'].append(renew_key[loupan][1])
+
     for date in target_date:
         if date in key_set:
             date_freq[date]={}
