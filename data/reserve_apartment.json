@@ -1,0 +1,230 @@
+{
+ "Set": [
+  "星海湾P26 Starview Bay",
+  "智慧社区演示",
+  "海悦湾1 P29 Ataraxia Park 1",
+  "海蓝湾P3 Cerulean Bay",
+  "观澜湾P4 Regalia Park"
+ ],
+ "2018-08": {
+  "count": 2,
+  "Chinese": {
+   "星海湾P26": 0,
+   "智慧社区演示": 0,
+   "海悦湾1 P29": 0,
+   "海蓝湾P3 ": 2,
+   "观澜湾P4 ": 0
+  },
+  "English": {
+   "Starview Bay": 0,
+   "Demo": 0,
+   "Ataraxia Park 1": 0,
+   "Cerulean Bay": 2,
+   "Regalia Park": 0
+  }
+ },
+ "2018-09": {
+  "count": 132,
+  "Chinese": {
+   "星海湾P26": 0,
+   "智慧社区演示": 0,
+   "海悦湾1 P29": 0,
+   "海蓝湾P3 ": 132,
+   "观澜湾P4 ": 0
+  },
+  "English": {
+   "Starview Bay": 0,
+   "Demo": 0,
+   "Ataraxia Park 1": 0,
+   "Cerulean Bay": 132,
+   "Regalia Park": 0
+  }
+ },
+ "2018-10": {
+  "count": 177,
+  "Chinese": {
+   "星海湾P26": 0,
+   "智慧社区演示": 0,
+   "海悦湾1 P29": 0,
+   "海蓝湾P3 ": 177,
+   "观澜湾P4 ": 0
+  },
+  "English": {
+   "Starview Bay": 0,
+   "Demo": 0,
+   "Ataraxia Park 1": 0,
+   "Cerulean Bay": 177,
+   "Regalia Park": 0
+  }
+ },
+ "2018-11": {
+  "count": 22,
+  "Chinese": {
+   "星海湾P26": 0,
+   "智慧社区演示": 0,
+   "海悦湾1 P29": 0,
+   "海蓝湾P3 ": 22,
+   "观澜湾P4 ": 0
+  },
+  "English": {
+   "Starview Bay": 0,
+   "Demo": 0,
+   "Ataraxia Park 1": 0,
+   "Cerulean Bay": 22,
+   "Regalia Park": 0
+  }
+ },
+ "2018-12": {
+  "count": 22,
+  "Chinese": {
+   "星海湾P26": 0,
+   "智慧社区演示": 0,
+   "海悦湾1 P29": 0,
+   "海蓝湾P3 ": 22,
+   "观澜湾P4 ": 0
+  },
+  "English": {
+   "Starview Bay": 0,
+   "Demo": 0,
+   "Ataraxia Park 1": 0,
+   "Cerulean Bay": 22,
+   "Regalia Park": 0
+  }
+ },
+ "2019-01": {
+  "count": 6,
+  "Chinese": {
+   "星海湾P26": 0,
+   "智慧社区演示": 0,
+   "海悦湾1 P29": 0,
+   "海蓝湾P3 ": 6,
+   "观澜湾P4 ": 0
+  },
+  "English": {
+   "Starview Bay": 0,
+   "Demo": 0,
+   "Ataraxia Park 1": 0,
+   "Cerulean Bay": 6,
+   "Regalia Park": 0
+  }
+ },
+ "2019-02": {
+  "count": 14,
+  "Chinese": {
+   "星海湾P26": 0,
+   "智慧社区演示": 0,
+   "海悦湾1 P29": 0,
+   "海蓝湾P3 ": 14,
+   "观澜湾P4 ": 0
+  },
+  "English": {
+   "Starview Bay": 0,
+   "Demo": 0,
+   "Ataraxia Park 1": 0,
+   "Cerulean Bay": 14,
+   "Regalia Park": 0
+  }
+ },
+ "2019-03": {
+  "count": 25,
+  "Chinese": {
+   "星海湾P26": 15,
+   "智慧社区演示": 0,
+   "海悦湾1 P29": 0,
+   "海蓝湾P3 ": 10,
+   "观澜湾P4 ": 0
+  },
+  "English": {
+   "Starview Bay": 15,
+   "Demo": 0,
+   "Ataraxia Park 1": 0,
+   "Cerulean Bay": 10,
+   "Regalia Park": 0
+  }
+ },
+ "2019-04": {
+  "count": 468,
+  "Chinese": {
+   "星海湾P26": 447,
+   "智慧社区演示": 4,
+   "海悦湾1 P29": 0,
+   "海蓝湾P3 ": 4,
+   "观澜湾P4 ": 13
+  },
+  "English": {
+   "Starview Bay": 447,
+   "Demo": 4,
+   "Ataraxia Park 1": 0,
+   "Cerulean Bay": 4,
+   "Regalia Park": 13
+  }
+ },
+ "2019-05": {
+  "count": 951,
+  "Chinese": {
+   "星海湾P26": 775,
+   "智慧社区演示": 1,
+   "海悦湾1 P29": 0,
+   "海蓝湾P3 ": 10,
+   "观澜湾P4 ": 165
+  },
+  "English": {
+   "Starview Bay": 775,
+   "Demo": 1,
+   "Ataraxia Park 1": 0,
+   "Cerulean Bay": 10,
+   "Regalia Park": 165
+  }
+ },
+ "2019-06": {
+  "count": 1198,
+  "Chinese": {
+   "星海湾P26": 768,
+   "智慧社区演示": 9,
+   "海悦湾1 P29": 0,
+   "海蓝湾P3 ": 3,
+   "观澜湾P4 ": 418
+  },
+  "English": {
+   "Starview Bay": 768,
+   "Demo": 9,
+   "Ataraxia Park 1": 0,
+   "Cerulean Bay": 3,
+   "Regalia Park": 418
+  }
+ },
+ "2019-07": {
+  "count": 1299,
+  "Chinese": {
+   "星海湾P26": 773,
+   "智慧社区演示": 1,
+   "海悦湾1 P29": 41,
+   "海蓝湾P3 ": 3,
+   "观澜湾P4 ": 481
+  },
+  "English": {
+   "Starview Bay": 773,
+   "Demo": 1,
+   "Ataraxia Park 1": 41,
+   "Cerulean Bay": 3,
+   "Regalia Park": 481
+  }
+ },
+ "2019-08": {
+  "count": 567,
+  "Chinese": {
+   "星海湾P26": 297,
+   "智慧社区演示": 1,
+   "海悦湾1 P29": 30,
+   "海蓝湾P3 ": 0,
+   "观澜湾P4 ": 239
+  },
+  "English": {
+   "Starview Bay": 297,
+   "Demo": 1,
+   "Ataraxia Park 1": 30,
+   "Cerulean Bay": 0,
+   "Regalia Park": 239
+  }
+ }
+}
