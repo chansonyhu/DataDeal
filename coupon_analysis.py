@@ -1,697 +1,219 @@
-{
- "cupon by month": {
-  "2019-05": {
-   "count": 11999,
-   "Chinese": {
-    "星空吧 ": 53,
-    "优品超市 ": 1781,
-    "全满福 ": 956,
-    "国医堂 ": 56,
-    "测试--玉珊的店": 0,
-    "琥珀首饰 ": 15,
-    "寺库 ": 588,
-    "金爸爸 ": 108,
-    "魔法森林 ": 278,
-    "创喜 ": 0,
-    "皇家雪兰莪 ": 278,
-    "汆悦麻辣烫 ": 3,
-    "BUS 1": 6,
-    "Paparich 金爸爸": 10,
-    "名表店 ": 50,
-    "美潮家居 ": 299,
-    "万香饼家 ": 806,
-    "Getha 吉梦达": 26,
-    "陕西面馆 ": 314,
-    "萌管家服务中心 ": 0,
-    "自选阁 ": 0,
-    "香化店 ": 129,
-    "吉梦达 ": 107,
-    "烨辉家电 ": 162,
-    "金伯居 ": 370,
-    "一粒沙 & A家家居中心 ": 622,
-    "昇免税店 ": 0,
-    "格美 ": 0,
-    "茶壹杯 & 老上海馄饨 ": 119,
-    "米芝莲 ": 107,
-    "吉新家居 ": 0,
-    "Droptop 咖啡厅": 7,
-    "Marrybrown 快餐店": 0,
-    "麻辣香锅 ": 1663,
-    "米色森林 ": 76,
-    "皇家湾燕窝土特产 ": 222,
-    "中国餐厅四川菜 ": 1538,
-    "Forest Rock 鞋店": 85,
-    "Tee Off Restaurant": 0,
-    "凤凰滨海酒店华莱西餐厅 ": 613,
-    "怡宝鱼头炉 ": 526,
-    "雪娅美仪 ": 26
-   },
-   "English": {
-    "Sirocco Skybar": 53,
-    "UP Grocer": 1781,
-    "Joyous Nanyang": 956,
-    "Guoyi Tang": 56,
-    "测试--玉珊的店": 0,
-    "Amber Touch Jewellery": 15,
-    "Secoo": 588,
-    "Paparich": 108,
-    "Tony Moly": 278,
-    "Creator Home": 0,
-    "Royal Selangor": 278,
-    "Cuan Yue Spicy Hot Pot": 3,
-    "BUS 1": 6,
-    "Paparich 金爸爸": 10,
-    "TWG Watch Gallery": 50,
-    "MEICHAO": 299,
-    "Ban Heang": 806,
-    "Getha 吉梦达": 26,
-    "Shaanxi Noodles": 314,
-    "Meng Customer Service": 0,
-    "Self Selected Court": 0,
-    "ADDICTION": 129,
-    "Getha": 107,
-    "Ye & Hui": 162,
-    "Kinborjue": 370,
-    "A HOME FURNITURE EXPERIENCE CENTER": 622,
-    "Indo Serimaju Duty Free Shop": 0,
-    "Orange Cat Internet Technology": 0,
-    "SHANGHAI WONTON AND TEA": 119,
-    "Mizhilian Musang King": 107,
-    "Jixin Furniture": 0,
-    "Droptop 咖啡厅": 7,
-    "Marrybrown 快餐店": 0,
-    "Ma La Xiang Guo": 1663,
-    "Yun Nan Rice Noodles": 76,
-    "Grand Golden Coast": 222,
-    "Restaurant Sichuan": 1538,
-    "Forest Rock 鞋店": 85,
-    "Tee Off Restaurant": 0,
-    "C&M Restaurant": 613,
-    "Ipoh Fish Head Restaurant": 526,
-    "Chere Beaute": 26
-   }
-  },
-  "2019-06": {
-   "count": 17595,
-   "Chinese": {
-    "星空吧 ": 17,
-    "优品超市 ": 2718,
-    "全满福 ": 1842,
-    "国医堂 ": 89,
-    "测试--玉珊的店": 0,
-    "琥珀首饰 ": 147,
-    "寺库 ": 517,
-    "金爸爸 ": 98,
-    "魔法森林 ": 159,
-    "创喜 ": 136,
-    "皇家雪兰莪 ": 199,
-    "汆悦麻辣烫 ": 48,
-    "BUS 1": 167,
-    "Paparich 金爸爸": 0,
-    "名表店 ": 176,
-    "美潮家居 ": 195,
-    "万香饼家 ": 1326,
-    "Getha 吉梦达": 0,
-    "陕西面馆 ": 488,
-    "萌管家服务中心 ": 0,
-    "自选阁 ": 0,
-    "香化店 ": 178,
-    "吉梦达 ": 255,
-    "烨辉家电 ": 620,
-    "金伯居 ": 278,
-    "一粒沙 & A家家居中心 ": 600,
-    "昇免税店 ": 31,
-    "格美 ": 55,
-    "茶壹杯 & 老上海馄饨 ": 132,
-    "米芝莲 ": 174,
-    "吉新家居 ": 10,
-    "Droptop 咖啡厅": 294,
-    "Marrybrown 快餐店": 4,
-    "麻辣香锅 ": 2885,
-    "米色森林 ": 152,
-    "皇家湾燕窝土特产 ": 276,
-    "中国餐厅四川菜 ": 1756,
-    "Forest Rock 鞋店": 57,
-    "Tee Off Restaurant": 113,
-    "凤凰滨海酒店华莱西餐厅 ": 399,
-    "怡宝鱼头炉 ": 981,
-    "雪娅美仪 ": 23
-   },
-   "English": {
-    "Sirocco Skybar": 17,
-    "UP Grocer": 2718,
-    "Joyous Nanyang": 1842,
-    "Guoyi Tang": 89,
-    "测试--玉珊的店": 0,
-    "Amber Touch Jewellery": 147,
-    "Secoo": 517,
-    "Paparich": 98,
-    "Tony Moly": 159,
-    "Creator Home": 136,
-    "Royal Selangor": 199,
-    "Cuan Yue Spicy Hot Pot": 48,
-    "BUS 1": 167,
-    "Paparich 金爸爸": 0,
-    "TWG Watch Gallery": 176,
-    "MEICHAO": 195,
-    "Ban Heang": 1326,
-    "Getha 吉梦达": 0,
-    "Shaanxi Noodles": 488,
-    "Meng Customer Service": 0,
-    "Self Selected Court": 0,
-    "ADDICTION": 178,
-    "Getha": 255,
-    "Ye & Hui": 620,
-    "Kinborjue": 278,
-    "A HOME FURNITURE EXPERIENCE CENTER": 600,
-    "Indo Serimaju Duty Free Shop": 31,
-    "Orange Cat Internet Technology": 55,
-    "SHANGHAI WONTON AND TEA": 132,
-    "Mizhilian Musang King": 174,
-    "Jixin Furniture": 10,
-    "Droptop 咖啡厅": 294,
-    "Marrybrown 快餐店": 4,
-    "Ma La Xiang Guo": 2885,
-    "Yun Nan Rice Noodles": 152,
-    "Grand Golden Coast": 276,
-    "Restaurant Sichuan": 1756,
-    "Forest Rock 鞋店": 57,
-    "Tee Off Restaurant": 113,
-    "C&M Restaurant": 399,
-    "Ipoh Fish Head Restaurant": 981,
-    "Chere Beaute": 23
-   }
-  },
-  "2019-07": {
-   "count": 18210,
-   "Chinese": {
-    "星空吧 ": 15,
-    "优品超市 ": 2487,
-    "全满福 ": 1208,
-    "国医堂 ": 86,
-    "测试--玉珊的店": 1,
-    "琥珀首饰 ": 132,
-    "寺库 ": 583,
-    "金爸爸 ": 109,
-    "魔法森林 ": 215,
-    "创喜 ": 67,
-    "皇家雪兰莪 ": 148,
-    "汆悦麻辣烫 ": 100,
-    "BUS 1": 281,
-    "Paparich 金爸爸": 0,
-    "名表店 ": 43,
-    "美潮家居 ": 105,
-    "万香饼家 ": 1521,
-    "Getha 吉梦达": 0,
-    "陕西面馆 ": 487,
-    "萌管家服务中心 ": 149,
-    "自选阁 ": 192,
-    "香化店 ": 293,
-    "吉梦达 ": 216,
-    "烨辉家电 ": 515,
-    "金伯居 ": 395,
-    "一粒沙 & A家家居中心 ": 451,
-    "昇免税店 ": 265,
-    "格美 ": 136,
-    "茶壹杯 & 老上海馄饨 ": 176,
-    "米芝莲 ": 181,
-    "吉新家居 ": 40,
-    "Droptop 咖啡厅": 558,
-    "Marrybrown 快餐店": 15,
-    "麻辣香锅 ": 2980,
-    "米色森林 ": 60,
-    "皇家湾燕窝土特产 ": 215,
-    "中国餐厅四川菜 ": 2030,
-    "Forest Rock 鞋店": 49,
-    "Tee Off Restaurant": 81,
-    "凤凰滨海酒店华莱西餐厅 ": 612,
-    "怡宝鱼头炉 ": 1000,
-    "雪娅美仪 ": 13
-   },
-   "English": {
-    "Sirocco Skybar": 15,
-    "UP Grocer": 2487,
-    "Joyous Nanyang": 1208,
-    "Guoyi Tang": 86,
-    "测试--玉珊的店": 1,
-    "Amber Touch Jewellery": 132,
-    "Secoo": 583,
-    "Paparich": 109,
-    "Tony Moly": 215,
-    "Creator Home": 67,
-    "Royal Selangor": 148,
-    "Cuan Yue Spicy Hot Pot": 100,
-    "BUS 1": 281,
-    "Paparich 金爸爸": 0,
-    "TWG Watch Gallery": 43,
-    "MEICHAO": 105,
-    "Ban Heang": 1521,
-    "Getha 吉梦达": 0,
-    "Shaanxi Noodles": 487,
-    "Meng Customer Service": 149,
-    "Self Selected Court": 192,
-    "ADDICTION": 293,
-    "Getha": 216,
-    "Ye & Hui": 515,
-    "Kinborjue": 395,
-    "A HOME FURNITURE EXPERIENCE CENTER": 451,
-    "Indo Serimaju Duty Free Shop": 265,
-    "Orange Cat Internet Technology": 136,
-    "SHANGHAI WONTON AND TEA": 176,
-    "Mizhilian Musang King": 181,
-    "Jixin Furniture": 40,
-    "Droptop 咖啡厅": 558,
-    "Marrybrown 快餐店": 15,
-    "Ma La Xiang Guo": 2980,
-    "Yun Nan Rice Noodles": 60,
-    "Grand Golden Coast": 215,
-    "Restaurant Sichuan": 2030,
-    "Forest Rock 鞋店": 49,
-    "Tee Off Restaurant": 81,
-    "C&M Restaurant": 612,
-    "Ipoh Fish Head Restaurant": 1000,
-    "Chere Beaute": 13
-   }
-  },
-  "sale_pro": {
-   "星空吧 ": 85,
-   "优品超市 ": 6986,
-   "全满福 ": 4006,
-   "国医堂 ": 231,
-   "测试--玉珊的店": 1,
-   "琥珀首饰 ": 294,
-   "寺库 ": 1688,
-   "金爸爸 ": 315,
-   "魔法森林 ": 652,
-   "创喜 ": 203,
-   "皇家雪兰莪 ": 625,
-   "汆悦麻辣烫 ": 151,
-   "BUS 1": 454,
-   "Paparich 金爸爸": 10,
-   "名表店 ": 269,
-   "美潮家居 ": 599,
-   "万香饼家 ": 3653,
-   "Getha 吉梦达": 26,
-   "陕西面馆 ": 1289,
-   "萌管家服务中心 ": 149,
-   "自选阁 ": 192,
-   "香化店 ": 600,
-   "吉梦达 ": 578,
-   "烨辉家电 ": 1297,
-   "金伯居 ": 1043,
-   "一粒沙 & A家家居中心 ": 1673,
-   "昇免税店 ": 296,
-   "格美 ": 191,
-   "茶壹杯 & 老上海馄饨 ": 427,
-   "米芝莲 ": 462,
-   "吉新家居 ": 50,
-   "Droptop 咖啡厅": 859,
-   "Marrybrown 快餐店": 19,
-   "麻辣香锅 ": 7528,
-   "米色森林 ": 288,
-   "皇家湾燕窝土特产 ": 713,
-   "中国餐厅四川菜 ": 5324,
-   "Forest Rock 鞋店": 191,
-   "Tee Off Restaurant": 194,
-   "凤凰滨海酒店华莱西餐厅 ": 1624,
-   "怡宝鱼头炉 ": 2507,
-   "雪娅美仪 ": 62
-  },
-  "Set": [
-   "星空吧 Sirocco Skybar",
-   "优品超市 UP Grocer",
-   "全满福 Joyous Nanyang",
-   "国医堂 Guoyi Tang",
-   "测试--玉珊的店",
-   "琥珀首饰 Amber Touch Jewellery",
-   "寺库 Secoo",
-   "金爸爸 Paparich ",
-   "魔法森林 Tony Moly",
-   "创喜 Creator Home",
-   "皇家雪兰莪 Royal Selangor",
-   "汆悦麻辣烫 Cuan Yue Spicy Hot Pot",
-   "BUS 1",
-   "Paparich 金爸爸",
-   "名表店 TWG Watch Gallery ",
-   "美潮家居 MEICHAO ",
-   "万香饼家 Ban Heang",
-   "Getha 吉梦达",
-   "陕西面馆 Shaanxi Noodles",
-   "萌管家服务中心 Meng Customer Service",
-   "自选阁 Self Selected Court",
-   "香化店 ADDICTION ",
-   "吉梦达 Getha ",
-   "烨辉家电 Ye & Hui",
-   "金伯居 Kinborjue",
-   "一粒沙 & A家家居中心 A HOME FURNITURE EXPERIENCE CENTER",
-   "昇免税店 Indo Serimaju Duty Free Shop ",
-   "格美 Orange Cat Internet Technology",
-   "茶壹杯 & 老上海馄饨 SHANGHAI WONTON AND TEA",
-   "米芝莲 Mizhilian Musang King",
-   "吉新家居 Jixin Furniture ",
-   "Droptop 咖啡厅",
-   "Marrybrown 快餐店",
-   "麻辣香锅 Ma La Xiang Guo",
-   "米色森林 Yun Nan Rice Noodles",
-   "皇家湾燕窝土特产 Grand Golden Coast",
-   "中国餐厅四川菜 Restaurant Sichuan",
-   "Forest Rock 鞋店",
-   "Tee Off Restaurant",
-   "凤凰滨海酒店华莱西餐厅 C&M Restaurant",
-   "怡宝鱼头炉 Ipoh Fish Head Restaurant",
-   "雪娅美仪 Chere Beaute"
-  ]
- },
- "sale in last month": {
-  "麻辣香锅 ": {
-   "2019-06-26": 114,
-   "2019-06-27": 185,
-   "2019-06-28": 313,
-   "2019-06-29": 406,
-   "2019-06-30": 488,
-   "2019-07-01": 579,
-   "2019-07-02": 737,
-   "2019-07-03": 849,
-   "2019-07-04": 992,
-   "2019-07-05": 1158,
-   "2019-07-06": 1312,
-   "2019-07-07": 1410,
-   "2019-07-08": 1479,
-   "2019-07-09": 1542,
-   "2019-07-10": 1597,
-   "2019-07-11": 1661,
-   "2019-07-12": 1771,
-   "2019-07-13": 1875,
-   "2019-07-14": 2038,
-   "2019-07-15": 2115,
-   "2019-07-16": 2209,
-   "2019-07-17": 2324,
-   "2019-07-18": 2423,
-   "2019-07-19": 2533,
-   "2019-07-20": 2664,
-   "2019-07-21": 2765,
-   "2019-07-22": 2934,
-   "2019-07-23": 3141,
-   "2019-07-24": 3255,
-   "2019-07-25": 3356,
-   "2019-07-26": 3468
-  },
-  "优品超市 ": {
-   "2019-06-26": 208,
-   "2019-06-27": 281,
-   "2019-06-28": 335,
-   "2019-06-29": 430,
-   "2019-06-30": 496,
-   "2019-07-01": 533,
-   "2019-07-02": 608,
-   "2019-07-03": 709,
-   "2019-07-04": 764,
-   "2019-07-05": 845,
-   "2019-07-06": 922,
-   "2019-07-07": 1073,
-   "2019-07-08": 1222,
-   "2019-07-09": 1322,
-   "2019-07-10": 1374,
-   "2019-07-11": 1498,
-   "2019-07-12": 1594,
-   "2019-07-13": 1692,
-   "2019-07-14": 1738,
-   "2019-07-15": 1815,
-   "2019-07-16": 2001,
-   "2019-07-17": 2124,
-   "2019-07-18": 2167,
-   "2019-07-19": 2284,
-   "2019-07-20": 2413,
-   "2019-07-21": 2487,
-   "2019-07-22": 2595,
-   "2019-07-23": 2730,
-   "2019-07-24": 2792,
-   "2019-07-25": 2939,
-   "2019-07-26": 2983
-  },
-  "中国餐厅四川菜 ": {
-   "2019-06-26": 52,
-   "2019-06-27": 145,
-   "2019-06-28": 219,
-   "2019-06-29": 306,
-   "2019-06-30": 377,
-   "2019-07-01": 429,
-   "2019-07-02": 535,
-   "2019-07-03": 632,
-   "2019-07-04": 707,
-   "2019-07-05": 793,
-   "2019-07-06": 854,
-   "2019-07-07": 905,
-   "2019-07-08": 1001,
-   "2019-07-09": 1044,
-   "2019-07-10": 1126,
-   "2019-07-11": 1179,
-   "2019-07-12": 1253,
-   "2019-07-13": 1316,
-   "2019-07-14": 1373,
-   "2019-07-15": 1450,
-   "2019-07-16": 1521,
-   "2019-07-17": 1569,
-   "2019-07-18": 1634,
-   "2019-07-19": 1723,
-   "2019-07-20": 1860,
-   "2019-07-21": 1987,
-   "2019-07-22": 2094,
-   "2019-07-23": 2263,
-   "2019-07-24": 2295,
-   "2019-07-25": 2382,
-   "2019-07-26": 2407
-  },
-  "万香饼家 ": {
-   "2019-06-26": 71,
-   "2019-06-27": 136,
-   "2019-06-28": 189,
-   "2019-06-29": 264,
-   "2019-06-30": 287,
-   "2019-07-01": 338,
-   "2019-07-02": 428,
-   "2019-07-03": 482,
-   "2019-07-04": 526,
-   "2019-07-05": 545,
-   "2019-07-06": 615,
-   "2019-07-07": 689,
-   "2019-07-08": 734,
-   "2019-07-09": 782,
-   "2019-07-10": 811,
-   "2019-07-11": 852,
-   "2019-07-12": 865,
-   "2019-07-13": 888,
-   "2019-07-14": 915,
-   "2019-07-15": 965,
-   "2019-07-16": 1060,
-   "2019-07-17": 1177,
-   "2019-07-18": 1177,
-   "2019-07-19": 1286,
-   "2019-07-20": 1366,
-   "2019-07-21": 1450,
-   "2019-07-22": 1511,
-   "2019-07-23": 1603,
-   "2019-07-24": 1678,
-   "2019-07-25": 1768,
-   "2019-07-26": 1808
-  },
-  "全满福 ": {
-   "2019-06-26": 133,
-   "2019-06-27": 170,
-   "2019-06-28": 235,
-   "2019-06-29": 360,
-   "2019-06-30": 473,
-   "2019-07-01": 482,
-   "2019-07-02": 538,
-   "2019-07-03": 548,
-   "2019-07-04": 553,
-   "2019-07-05": 594,
-   "2019-07-06": 641,
-   "2019-07-07": 674,
-   "2019-07-08": 711,
-   "2019-07-09": 737,
-   "2019-07-10": 789,
-   "2019-07-11": 830,
-   "2019-07-12": 864,
-   "2019-07-13": 878,
-   "2019-07-14": 893,
-   "2019-07-15": 992,
-   "2019-07-16": 993,
-   "2019-07-17": 1031,
-   "2019-07-18": 1072,
-   "2019-07-19": 1156,
-   "2019-07-20": 1318,
-   "2019-07-21": 1383,
-   "2019-07-22": 1392,
-   "2019-07-23": 1520,
-   "2019-07-24": 1548,
-   "2019-07-25": 1642,
-   "2019-07-26": 1681
-  },
-  "怡宝鱼头炉 ": {
-   "2019-06-26": 57,
-   "2019-06-27": 93,
-   "2019-06-28": 160,
-   "2019-06-29": 196,
-   "2019-06-30": 196,
-   "2019-07-01": 229,
-   "2019-07-02": 266,
-   "2019-07-03": 306,
-   "2019-07-04": 325,
-   "2019-07-05": 352,
-   "2019-07-06": 387,
-   "2019-07-07": 387,
-   "2019-07-08": 422,
-   "2019-07-09": 433,
-   "2019-07-10": 485,
-   "2019-07-11": 493,
-   "2019-07-12": 541,
-   "2019-07-13": 599,
-   "2019-07-14": 599,
-   "2019-07-15": 659,
-   "2019-07-16": 760,
-   "2019-07-17": 796,
-   "2019-07-18": 831,
-   "2019-07-19": 886,
-   "2019-07-20": 913,
-   "2019-07-21": 913,
-   "2019-07-22": 970,
-   "2019-07-23": 1009,
-   "2019-07-24": 1025,
-   "2019-07-25": 1124,
-   "2019-07-26": 1196
-  },
-  "凤凰滨海酒店华莱西餐厅 ": {
-   "2019-06-26": 24,
-   "2019-06-27": 53,
-   "2019-06-28": 84,
-   "2019-06-29": 106,
-   "2019-06-30": 143,
-   "2019-07-01": 158,
-   "2019-07-02": 191,
-   "2019-07-03": 207,
-   "2019-07-04": 231,
-   "2019-07-05": 248,
-   "2019-07-06": 269,
-   "2019-07-07": 316,
-   "2019-07-08": 355,
-   "2019-07-09": 363,
-   "2019-07-10": 391,
-   "2019-07-11": 392,
-   "2019-07-12": 425,
-   "2019-07-13": 461,
-   "2019-07-14": 484,
-   "2019-07-15": 518,
-   "2019-07-16": 558,
-   "2019-07-17": 590,
-   "2019-07-18": 601,
-   "2019-07-19": 617,
-   "2019-07-20": 638,
-   "2019-07-21": 680,
-   "2019-07-22": 687,
-   "2019-07-23": 715,
-   "2019-07-24": 719,
-   "2019-07-25": 740,
-   "2019-07-26": 755
-  },
-  "烨辉家电 ": {
-   "2019-06-26": 20,
-   "2019-06-27": 35,
-   "2019-06-28": 59,
-   "2019-06-29": 86,
-   "2019-06-30": 116,
-   "2019-07-01": 131,
-   "2019-07-02": 151,
-   "2019-07-03": 171,
-   "2019-07-04": 196,
-   "2019-07-05": 209,
-   "2019-07-06": 269,
-   "2019-07-07": 287,
-   "2019-07-08": 338,
-   "2019-07-09": 353,
-   "2019-07-10": 363,
-   "2019-07-11": 373,
-   "2019-07-12": 396,
-   "2019-07-13": 421,
-   "2019-07-14": 431,
-   "2019-07-15": 471,
-   "2019-07-16": 496,
-   "2019-07-17": 521,
-   "2019-07-18": 536,
-   "2019-07-19": 556,
-   "2019-07-20": 571,
-   "2019-07-21": 606,
-   "2019-07-22": 606,
-   "2019-07-23": 606,
-   "2019-07-24": 611,
-   "2019-07-25": 611,
-   "2019-07-26": 631
-  },
-  "Droptop 咖啡厅": {
-   "2019-06-26": 15,
-   "2019-06-27": 21,
-   "2019-06-28": 43,
-   "2019-06-29": 64,
-   "2019-06-30": 72,
-   "2019-07-01": 106,
-   "2019-07-02": 110,
-   "2019-07-03": 121,
-   "2019-07-04": 146,
-   "2019-07-05": 169,
-   "2019-07-06": 181,
-   "2019-07-07": 216,
-   "2019-07-08": 243,
-   "2019-07-09": 262,
-   "2019-07-10": 279,
-   "2019-07-11": 316,
-   "2019-07-12": 328,
-   "2019-07-13": 340,
-   "2019-07-14": 365,
-   "2019-07-15": 384,
-   "2019-07-16": 395,
-   "2019-07-17": 414,
-   "2019-07-18": 437,
-   "2019-07-19": 478,
-   "2019-07-20": 503,
-   "2019-07-21": 515,
-   "2019-07-22": 526,
-   "2019-07-23": 577,
-   "2019-07-24": 585,
-   "2019-07-25": 616,
-   "2019-07-26": 630
-  },
-  "寺库 ": {
-   "2019-06-26": 0,
-   "2019-06-27": 0,
-   "2019-06-28": 0,
-   "2019-06-29": 0,
-   "2019-06-30": 0,
-   "2019-07-01": 23,
-   "2019-07-02": 23,
-   "2019-07-03": 84,
-   "2019-07-04": 84,
-   "2019-07-05": 128,
-   "2019-07-06": 128,
-   "2019-07-07": 166,
-   "2019-07-08": 166,
-   "2019-07-09": 166,
-   "2019-07-10": 166,
-   "2019-07-11": 199,
-   "2019-07-12": 199,
-   "2019-07-13": 199,
-   "2019-07-14": 224,
-   "2019-07-15": 224,
-   "2019-07-16": 316,
-   "2019-07-17": 338,
-   "2019-07-18": 338,
-   "2019-07-19": 338,
-   "2019-07-20": 388,
-   "2019-07-21": 437,
-   "2019-07-22": 462,
-   "2019-07-23": 493,
-   "2019-07-24": 506,
-   "2019-07-25": 544,
-   "2019-07-26": 583
-  }
- }
-}
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Jul 18 15:18:53 2019
+
+@author: Shuo Wan
+"""
+import json
+import datetime
+import pandas as pd
+import re
+import numpy as np
+
+
+def key_analysis(sale_key):
+    renew_key={}
+    for lab in sale_key:
+        split_p=re.search('[\u4e00-\u9fa5] [a-zA-Z]',lab,re.A)
+        if not (split_p is None):
+            h=split_p.span()[0]+1
+            Chinese=lab[0:h+1]
+            English=lab[h+1:]
+            if len(English)<=2:
+                English=Chinese
+            else:
+                English=English.strip()
+        else:
+            Chinese=lab
+            English=Chinese
+        renew_key[lab]=[Chinese,English]
+                    
+    return renew_key
+
+
+#对脏标签进行处理，去掉同一家店的其它标签
+def remove_similar_index(groupsales,data):
+    similaridx=[]
+    delet_label=[]
+    numsales=len(groupsales)
+    for i in range(numsales):
+        for j in range(numsales):
+            if i==j:
+                continue
+            if groupsales[i] in groupsales[j]:
+                similaridx.append([i,j])
+    len_similar=len(similaridx)
+    if len_similar==0:
+        return [data, groupsales]
+    for i in range(len_similar):
+        idx=similaridx[i]
+        delet_label.append(groupsales[idx[0]])
+        data.replace(groupsales[idx[0]],groupsales[idx[1]],inplace=True)
+    for labels in delet_label:
+        groupsales.remove(labels)
+    return [data,groupsales]
+
+
+def generate_list(begin_date,end_date):
+    end_date=datetime.datetime.strptime(end_date,"%Y-%m")
+    end_date=end_date+datetime.timedelta(days=31)
+    date_list=[]
+    temp=list(pd.date_range(start=begin_date, end=end_date,freq='m'))
+    for x in temp:
+        date_list.append(x.strftime('%Y-%m'))
+#        date_t=datetime.datetime.strptime(date_str,"%Y-%m-%d")
+#        date_list.append(datetime.datetime(date_t.year,date_t.month,1,0,0))
+    
+    return date_list
+
+def excel_to_dict(filename="收楼优惠券",interest_columns=['商家名称','销券时间']):
+    #对表头属性进行判断设置
+    path="data/"
+    try:
+        data_original = pd.read_excel(path+filename+".xls",header=0)
+    except:
+        data_original = pd.read_excel(path+filename+".xlsx",header=0)
+    #获取行列索引
+    col=data_original.columns
+    row=data_original.index
+    #找到第一个不为null的行，即为属性名所在行，设置属性名
+    judge_null=data_original[col[0]].isnull()
+    for i in range(8):
+        if judge_null[i]==False:
+            break
+    data_original.columns=list(data_original.iloc[i])
+    #删除无数据错误行
+    for j in range(i+1):
+        data_original.drop(row[j],inplace=True)
+        
+    data_interest=data_original[interest_columns]
+    data=data_interest.dropna()
+    groupsales=list(set(list(data['商家名称'].values)))
+    [data,groupsales]=remove_similar_index(groupsales,data)
+    #将dateframe格式转为字典，每个列名作为一个字典的key
+#    data_dict={col:data_interest.dropna()[col].tolist() for col in data_interest.columns}            
+    
+    return [data,groupsales]
+
+
+def date_distribute_aly(data,sale_set,start_date,end_date,numd=30):
+    data_time=data['销券时间']
+    row=data_time.index
+    if len(data_time[row[0]])>=12:
+        date_form="%Y-%m-%d %H:%M"
+    else:
+        date_form="%Y-%m-%d"
+    #将所有字符型日期数据转为指定格式数据，去除天，保留年月
+    data['销券时间'] = pd.to_datetime(data_dict['销券时间'], format=date_form)
+    data['month']=data['销券时间']
+    data['month'] =data['month'].apply(lambda x:x.strftime('%Y-%m'))
+    data['day']=data['销券时间']
+    data['day'] =data['day'].apply(lambda x:x.strftime('%Y-%m-%d'))
+   
+
+#    for i in range(len(data_time)):
+#        date_t=datetime.datetime.strptime(data_time[row[i]],date_form)
+#        data['销券时间'][row[i]]=datetime.datetime(date_t.year,date_t.month,1,0,0)
+#        data1['销券时间'][row[i]]=datetime.datetime(date_t.year,date_t.month,date_t.day,0,0)
+    month_receive=dict(list(data[['商家名称','month']].groupby('month')))
+    day_receive=dict(list(data[['商家名称','day']].groupby('day')))
+   
+    target_month=generate_list(start_date,end_date)
+    
+#    target_day=[]
+#    now=datetime.date.today()
+#    target_day.append(now.strftime('%Y-%m-%d'))
+#    for i in range(num):
+#        now=now+datetime.timedelta(days=-1)
+#        target_day.append(now.strftime('%Y-%m-%d'))
+#    target_date=generate_list(start_date,end_date)
+    
+#    target_day.reverse()
+
+    date_freq={}
+    key_set=month_receive.keys()
+    renew_key=key_analysis(sale_set)
+    for date in target_month:
+        if date in key_set:
+            date_freq[date]={}
+            sale_distribute=list(month_receive[date]['商家名称'])
+            total_sale=len(sale_distribute)
+            date_freq[date]['count']=total_sale
+            date_freq[date]['Chinese']={}
+            date_freq[date]['English']={}
+            for sale in sale_set:
+                num=sale_distribute.count(sale)
+                date_freq[date]['Chinese'][renew_key[sale][0]]=num                
+                date_freq[date]['English'][renew_key[sale][1]]=num
+#                date_freq[date.strftime("%Y-%m")][sale]=sale_distribute.count(sale)
+        else:
+            continue
+    sale_list=list(data['商家名称'])
+    date_freq['sale_pro']={}
+    date_freq['Set']=sale_set
+    for sale in sale_set:
+        date_freq['sale_pro'][renew_key[sale][0]]=sale_list.count(sale)
+    
+    day_freq={}
+    key_set=day_receive.keys()
+    renew_key=key_analysis(sale_set)
+    count=np.zeros([len(sale_set)])
+    
+    target_day=[]
+    now=datetime.date.today()
+    for i in range(365):
+        lday=now.strftime('%Y-%m-%d')
+        if lday in key_set:
+            break
+        else:
+            now=now+datetime.timedelta(days=-1)
+            
+    target_day.append(now.strftime('%Y-%m-%d'))
+    for i in range(numd):
+        now=now+datetime.timedelta(days=-1)
+        target_day.append(now.strftime('%Y-%m-%d'))
+    target_day.reverse()
+
+    
+    #当前日期往前推30天的统计，如果数据没更新，则把没有数据的新日期去掉
+    for date in target_day:
+#        if date in key_set:
+        day_freq[date]={}
+        sale_distribute=list(day_receive[date]['商家名称'])
+        No=0
+        for sale in sale_set:
+            count[No]+=sale_distribute.count(sale)
+            day_freq[date][renew_key[sale][0]]=int(count[No])
+            No+=1
+    main_sale=dict(sorted(day_freq[date].items(), key=lambda e: e[1],reverse=True)[:10]).keys()
+    sale_count={}
+    for sale in main_sale:
+        sale_count[sale]={}
+        for date in target_day:
+            sale_count[sale][date]=day_freq[date][sale]
+#                date_freq[date.strftime("%Y-%m")][sale]=sale_distribute.count(sale)
+#            day_freq[date]=dict(sorted(day_freq[date].items(), key=lambda e: e[1],reverse=True)[:10])
+#        else:
+#            day_freq[date]=0
+    
+#    with open('cupon.json','w') as f:
+#        json.dump(date_freq,f)
+    
+    date={'cupon by month':date_freq,'sale in last month':sale_count}
+    
+    return date
+
+   
+
+
+
+if __name__ == '__main__':
+    [data_dict,groupsales]=excel_to_dict()
+    
+    cupon_distribute=date_distribute_aly(data_dict,groupsales,"2018-10","2019-7")
+    with open('data/cupon.json','w',encoding='utf-8') as f:
+        json.dump(cupon_distribute,f,indent=1,ensure_ascii=False)
+    del data_dict,groupsales,cupon_distribute
+    f.close()
+
+
