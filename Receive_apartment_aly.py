@@ -101,7 +101,7 @@ def date_distribute_aly(data,start_date,end_date):
         else:
             continue
     
-    with open('reserve_apartment.json','w',encoding='utf-8') as f:
+    with open('data/reserve_apartment.json','w',encoding='utf-8') as f:
         json.dump(date_freq,f,indent=1,ensure_ascii=False)
       
     return date_freq
