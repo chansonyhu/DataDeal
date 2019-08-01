@@ -133,13 +133,17 @@ def loupan_distribute_aly(data):
 
 
 #统计用户数在指定时间段内的分布
-def date_distribute_aly(data,start_date,end_date):
+def date_distribute_aly(data,start_date):
     data_time=data['注册时间']
     date_list_month=[]
     #将所有字符型日期数据转为指定格式数据，去除天，保留年月
     for date in data_time:
         date_t=datetime.datetime.strptime(date,"%Y-%m-%d")
         date_list_month.append(datetime.datetime(date_t.year,date_t.month,1,0,0))
+    date_set=list(set(date_list_month))
+    date_set.sort()
+    e_date=date_set[-1]
+    end_date=e_date.strftime("%Y-%m")
     #生成目标日期列表
     target_date=generate_list(start_date,end_date)
     date_freq={}
@@ -219,7 +223,7 @@ if __name__ == '__main__':
     [chinese,english]=loupan_distribute_aly(data_dict)
     data_json['loupan distribute chinese']=chinese
     data_json['loupan distribute english']=english
-    data_json['Time distribute']=date_distribute_aly(data_dict,"2017-1","2019-7")
+    data_json['Time distribute']=date_distribute_aly(data_dict,"2017-1")
     with open('data/APPuser_distribute.json','w',encoding='utf-8') as f:
         json.dump(data_json,f,indent=1,ensure_ascii=False)
     f.close()
