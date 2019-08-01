@@ -93,7 +93,7 @@ def generate_list(begin_date,end_date):
     
     return date_list
 
-def date_distribute_aly(data,start_date,end_date,numd=2):
+def date_distribute_aly(data,start_date,numd=2):
     data_time=data['订单支付时间']
     row=data_time.index
     
@@ -108,6 +108,11 @@ def date_distribute_aly(data,start_date,end_date,numd=2):
     data['订单支付时间'] = pd.to_datetime(data_dict['订单支付时间'], format=date_form)
     data['订单支付时间'] =data['订单支付时间'].apply(lambda x:x.strftime('%Y-%m'))
     date_list_month=list(data['订单支付时间'])
+
+    lmonth=list(set(list(pd.to_datetime(data['订单支付时间'],format='%Y-%m'))))
+    lmonth.sort()
+    end_date=lmonth[-1].strftime("%Y-%m")
+
     
 
     target_date=generate_list(start_date,end_date)
@@ -150,6 +155,6 @@ def date_distribute_aly(data,start_date,end_date,numd=2):
 if __name__ == '__main__':
     data_dict=excel_to_dict()
     padata_loupan=loupan_distribute_aly(data_dict)
-    [date_distribute,month_freq]=date_distribute_aly(data_dict,"2019-1","2019-7")
+    [date_distribute,month_freq]=date_distribute_aly(data_dict,"2019-1")
     with open('data/pay_data.json','w',encoding='utf-8') as f:
         json.dump({'loupan':padata_loupan,'date':date_distribute,'month':month_freq},f,indent=1,ensure_ascii=False)
