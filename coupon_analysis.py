@@ -96,7 +96,7 @@ def excel_to_dict(filename="收楼优惠券",interest_columns=['商家名称','�
     return [data,groupsales]
 
 
-def date_distribute_aly(data,sale_set,start_date,end_date,numd=30):
+def date_distribute_aly(data,sale_set,start_date,numd=30):
     data_time=data['销券时间']
     row=data_time.index
     if len(data_time[row[0]])>=12:
@@ -104,13 +104,15 @@ def date_distribute_aly(data,sale_set,start_date,end_date,numd=30):
     else:
         date_form="%Y-%m-%d"
     #将所有字符型日期数据转为指定格式数据，去除天，保留年月
-    data['销券时间'] = pd.to_datetime(data_dict['销券时间'], format=date_form)
+    data['销券时间'] = pd.to_datetime(data['销券时间'], format=date_form)
     data['month']=data['销券时间']
     data['month'] =data['month'].apply(lambda x:x.strftime('%Y-%m'))
     data['day']=data['销券时间']
     data['day'] =data['day'].apply(lambda x:x.strftime('%Y-%m-%d'))
    
-
+    lmonth=list(set(list(pd.to_datetime(data['month'],format='%Y-%m'))))
+    lmonth.sort()
+    end_date=lmonth[-1].strftime("%Y-%m")
 #    for i in range(len(data_time)):
 #        date_t=datetime.datetime.strptime(data_time[row[i]],date_form)
 #        data['销券时间'][row[i]]=datetime.datetime(date_t.year,date_t.month,1,0,0)
@@ -210,7 +212,7 @@ def date_distribute_aly(data,sale_set,start_date,end_date,numd=30):
 if __name__ == '__main__':
     [data_dict,groupsales]=excel_to_dict()
     
-    cupon_distribute=date_distribute_aly(data_dict,groupsales,"2018-10","2019-7")
+    cupon_distribute=date_distribute_aly(data_dict,groupsales,"2018-10")
     with open('data/cupon.json','w',encoding='utf-8') as f:
         json.dump(cupon_distribute,f,indent=1,ensure_ascii=False)
     del data_dict,groupsales,cupon_distribute
