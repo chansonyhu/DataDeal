@@ -68,7 +68,7 @@ def excel_to_dict(filename="预约收楼",interest_columns=['楼盘名称','预�
     
     return data_interest.dropna()
 
-def date_distribute_aly(data,start_date,end_date):
+def date_distribute_aly(data,start_date):
     data_time=data['预约时间']
     row=data_time.index
     if len(data_time[row[0]])>=12:
@@ -78,6 +78,11 @@ def date_distribute_aly(data,start_date,end_date):
 
     data['预约时间'] = pd.to_datetime(data_dict['预约时间'], format=date_form)
     data['预约时间'] =data['预约时间'].apply(lambda x:x.strftime('%Y-%m'))
+    
+    lmonth=list(set(list(pd.to_datetime(data['预约时间'],format='%Y-%m'))))
+    lmonth.sort()
+    end_date=lmonth[-1].strftime("%Y-%m")
+
 
 
     #将所有字符型日期数据转为指定格式数据，去除天，保留年月
@@ -119,4 +124,4 @@ def date_distribute_aly(data,start_date,end_date):
 
 if __name__ == '__main__':
     data_dict=excel_to_dict()
-    date_distribute=date_distribute_aly(data_dict,"2015-10","2019-8")
+    date_distribute=date_distribute_aly(data_dict,"2015-10")
