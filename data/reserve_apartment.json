@@ -235,5 +235,39 @@
    "Cerulean Bay": 0,
    "Regalia Park": 239
   }
+ },
+ "2019-09": {
+  "count": 7,
+  "Chinese": {
+   "星海湾P26": 0,
+   "智慧社区演示": 0,
+   "海悦湾1 P29": 5,
+   "海蓝湾P3": 0,
+   "观澜湾P4": 2
+  },
+  "English": {
+   "Starview Bay": 0,
+   "Demo": 0,
+   "Ataraxia Park 1": 5,
+   "Cerulean Bay": 0,
+   "Regalia Park": 2
+  }
+ },
+ "2019-10": {
+  "count": 4,
+  "Chinese": {
+   "星海湾P26": 2,
+   "智慧社区演示": 0,
+   "海悦湾1 P29": 1,
+   "海蓝湾P3": 0,
+   "观澜湾P4": 1
+  },
+  "English": {
+   "Starview Bay": 2,
+   "Demo": 0,
+   "Ataraxia Park 1": 1,
+   "Cerulean Bay": 0,
+   "Regalia Park": 1
+  }
  }
 }
