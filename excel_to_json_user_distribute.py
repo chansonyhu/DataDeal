@@ -182,7 +182,10 @@ def month_country(data,num=2):
     dict_country = country_no.set_index('电话代码').T.to_dict('list')
 
     target_date=[]
-    now=datetime.date.today()
+    lmonth=list(set(list(data['注册时间'])))
+    lmonth.sort()
+    now=lmonth[-1]
+    
     target_date.append(now.strftime('%Y-%m'))
     for i in range(num):
         now=now+datetime.timedelta(days=-(now.day+2))
