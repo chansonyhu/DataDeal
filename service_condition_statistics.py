@@ -63,13 +63,14 @@ def key_analysis(loupan_key):
 
 
 #统计数据中各个楼盘的数量分布
-def loupan_distribute_aly(data):
-    data_loupan=list(data['楼盘'])
+def loupan_distribute_aly(data,item='楼盘'):
+    data_loupan=list(data[item])
     loupan_freq={}
     loupan_freq['Chinese']={}
     loupan_freq['English']={}
     loupan_set=set(data_loupan)
     #数据格式里面对中文和英文分标签
+    #如果名称本身不需要分割，则不必进行中英文分割
     renew_key=key_analysis(list(loupan_set))
     for loupan in set(data_loupan):
         loupan_freq['Chinese'][renew_key[loupan][0]]=data_loupan.count(loupan)
@@ -93,8 +94,8 @@ def generate_list(begin_date,end_date):
     
     return date_list
 
-def date_distribute_aly(data,start_date,numd=2):
-    data_time=data['订单支付时间']
+def date_distribute_aly(data,start_date,numd=2,item='订单支付时间',sonitem='楼盘'):
+    data_time=data[item]
     row=data_time.index
     
     #判断时间格式是否包括时和分
@@ -105,11 +106,12 @@ def date_distribute_aly(data,start_date,numd=2):
 
     
     #对表格中时间格式统一处理，保留年月
-    data['订单支付时间'] = pd.to_datetime(data_dict['订单支付时间'], format=date_form)
-    data['订单支付时间'] =data['订单支付时间'].apply(lambda x:x.strftime('%Y-%m'))
-    date_list_month=list(data['订单支付时间'])
+    data[item] = pd.to_datetime(data_dict[item], format=date_form)
+    data[item] =data[item].apply(lambda x:x.strftime('%Y-%m'))
+    date_list_month=list(data[item])
 
-    lmonth=list(set(list(pd.to_datetime(data['订单支付时间'],format='%Y-%m'))))
+    #找出数据中最晚的一个月份作为统计截止月份
+    lmonth=list(set(list(pd.to_datetime(data[item],format='%Y-%m'))))
     lmonth.sort()
     end_date=lmonth[-1].strftime("%Y-%m")
 
@@ -124,24 +126,25 @@ def date_distribute_aly(data,start_date,numd=2):
         if date in date_set:
             date_freq[date]=date_list_month.count(date)
         
-    dict_receive=dict(list(data.groupby('订单支付时间')))
+    dict_receive=dict(list(data.groupby(item)))
     target_date=[]
-    now=datetime.date.today()
+#    now=datetime.date.today()
+    now=lmonth[-1]
     target_date.append(now.strftime('%Y-%m'))
     for i in range(numd):
         now=now+datetime.timedelta(days=-(now.day+2))
         target_date.append(now.strftime('%Y-%m'))
     month_freq={}
     key_set=dict_receive.keys()
-    loupan_set=dict(list(data.groupby('楼盘'))).keys()
-    renew_key=key_analysis(list(loupan_set))
+    son_set=dict(list(data.groupby(sonitem))).keys()
+    renew_key=key_analysis(list(son_set))
     for date in target_date:
         if date in key_set:
             month_freq[date]={}
             month_freq[date]['Chinese']={}
             month_freq[date]['English']={}
-            lou=list(dict_receive[date]['楼盘'])
-            for loupan in loupan_set:
+            lou=list(dict_receive[date][sonitem])
+            for loupan in son_set:
                 num=lou.count(loupan)
                 month_freq[date]['Chinese'][renew_key[loupan][0]]=num
                 month_freq[date]['English'][renew_key[loupan][1]]=num
