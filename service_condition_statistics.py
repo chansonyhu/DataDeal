@@ -18,18 +18,20 @@ def excel_to_dict(filename="forest支付数据",interest_columns=['楼盘','订�
     except:
         data_original = pd.read_excel(path+filename+".xlsx",header=0)
     #获取行列索引
-    col=data_original.columns
-    row=data_original.index
-    #找到第一个不为null的行，即为属性名所在行，设置属性名
-    judge_null=data_original[col[0]].isnull()
-    for i in range(8):
-        if judge_null[i]==False:
-            break
-    data_original.columns=list(data_original.iloc[i])
-    #删除无数据NULL行
-    for j in range(i+1):
-        data_original.drop(row[j],inplace=True)
+    if True in data_original.columns.str.contains('^Unnamed'):
     
+        col=data_original.columns
+        row=data_original.index
+        #找到第一个不为null的行，即为属性名所在行，设置属性名
+        judge_null=data_original[col[0]].isnull()
+        for i in range(8):
+            if judge_null[i]==False:
+                break
+        data_original.columns=list(data_original.iloc[i])
+        #删除无数据NULL行
+        for j in range(i+1):
+            data_original.drop(row[j],inplace=True)
+        
     #取出感兴趣的属性列
     data_interest=data_original[interest_columns]
     
