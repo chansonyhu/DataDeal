@@ -53,7 +53,7 @@ def remove_similar_index(groupsales,data):
         groupsales.remove(labels)
     return [data,groupsales]
 
-
+#产生按月份日期列表，可复用
 def generate_list(begin_date,end_date):
     end_date=datetime.datetime.strptime(end_date,"%Y-%m")
     end_date=end_date+datetime.timedelta(days=31)
@@ -74,17 +74,19 @@ def excel_to_dict(filename="收楼优惠券",interest_columns=['商家名称','�
     except:
         data_original = pd.read_excel(path+filename+".xlsx",header=0)
     #获取行列索引
-    col=data_original.columns
-    row=data_original.index
-    #找到第一个不为null的行，即为属性名所在行，设置属性名
-    judge_null=data_original[col[0]].isnull()
-    for i in range(8):
-        if judge_null[i]==False:
-            break
-    data_original.columns=list(data_original.iloc[i])
-    #删除无数据错误行
-    for j in range(i+1):
-        data_original.drop(row[j],inplace=True)
+    if True in data_original.columns.str.contains('^Unnamed'):
+    
+        col=data_original.columns
+        row=data_original.index
+        #找到第一个不为null的行，即为属性名所在行，设置属性名
+        judge_null=data_original[col[0]].isnull()
+        for i in range(8):
+            if judge_null[i]==False:
+                break
+        data_original.columns=list(data_original.iloc[i])
+        #删除无数据错误行
+        for j in range(i+1):
+            data_original.drop(row[j],inplace=True)
         
     data_interest=data_original[interest_columns]
     data=data_interest.dropna()
