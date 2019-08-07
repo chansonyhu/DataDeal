@@ -178,14 +178,16 @@ def date_distribute_aly(data,sale_set,start_date,numd=30):
         target_day.append(now.strftime('%Y-%m-%d'))
     target_day.reverse()
 
-    
+    day_dis={}
     #当前日期往前推30天的统计，如果数据没更新，则把没有数据的新日期去掉
     for date in target_day:
 #        if date in key_set:
         day_freq[date]={}
+        day_dis[date]={}
         sale_distribute=list(day_receive[date]['商家名称'])
         No=0
         for sale in sale_set:
+            day_dis[date][renew_key[sale][0]]=sale_distribute.count(sale)
             count[No]+=sale_distribute.count(sale)
             day_freq[date][renew_key[sale][0]]=int(count[No])
             No+=1
@@ -193,8 +195,11 @@ def date_distribute_aly(data,sale_set,start_date,numd=30):
     sale_count={}
     for sale in main_sale:
         sale_count[sale]={}
+        sale_count[sale]['accu']={}
+        sale_count[sale]['independent']={}
         for date in target_day:
-            sale_count[sale][date]=day_freq[date][sale]
+            sale_count[sale]['accu'][date]=day_freq[date][sale]
+            sale_count[sale]['independent'][date]=day_dis[date][sale]
 #                date_freq[date.strftime("%Y-%m")][sale]=sale_distribute.count(sale)
 #            day_freq[date]=dict(sorted(day_freq[date].items(), key=lambda e: e[1],reverse=True)[:10])
 #        else:
@@ -215,7 +220,7 @@ if __name__ == '__main__':
     [data_dict,groupsales]=excel_to_dict()
     
     cupon_distribute=date_distribute_aly(data_dict,groupsales,"2018-10")
-    with open('data/cupon.json','w',encoding='utf-8') as f:
+    with open('data/coupon.json','w',encoding='utf-8') as f:
         json.dump(cupon_distribute,f,indent=1,ensure_ascii=False)
     del data_dict,groupsales,cupon_distribute
     f.close()
