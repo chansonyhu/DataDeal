@@ -154,7 +154,6 @@ def date_distribute_aly(data,sale_set,start_date,numd=30):
             continue
     sale_list=list(data['商家名称'])
     date_freq['sale_pro']={}
-    date_freq['Set']=sale_set
     for sale in sale_set:
         date_freq['sale_pro'][renew_key[sale][0]]=sale_list.count(sale)
     
@@ -208,7 +207,7 @@ def date_distribute_aly(data,sale_set,start_date,numd=30):
 #    with open('cupon.json','w') as f:
 #        json.dump(date_freq,f)
     
-    date={'cupon by month':date_freq,'sale in last month':sale_count}
+    date={'coupon by month':date_freq,'sale in last month':sale_count}
     
     return date
 
