@@ -156,6 +156,7 @@ def date_distribute_aly(data,sale_set,start_date,numd=30):
     date_freq['sale_pro']={}
     for sale in sale_set:
         date_freq['sale_pro'][renew_key[sale][0]]=sale_list.count(sale)
+    date_freq['sale_pro']=dict(sorted(date_freq['sale_pro'].items(), key=lambda e: e[1],reverse=True))
     
     day_freq={}
     key_set=day_receive.keys()
