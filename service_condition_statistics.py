@@ -96,7 +96,7 @@ def generate_list(begin_date,end_date):
     
     return date_list
 
-def date_distribute_aly(data,start_date,numd=2,item='订单支付时间',sonitem='楼盘'):
+def date_distribute_aly(data,start_date,item='订单支付时间',sonitem='楼盘'):
     data_time=data[item]
     row=data_time.index
     
@@ -129,13 +129,13 @@ def date_distribute_aly(data,start_date,numd=2,item='订单支付时间',sonitem
             date_freq[date]=date_list_month.count(date)
         
     dict_receive=dict(list(data.groupby(item)))
-    target_date=[]
-#    now=datetime.date.today()
-    now=lmonth[-1]
-    target_date.append(now.strftime('%Y-%m'))
-    for i in range(numd):
-        now=now+datetime.timedelta(days=-(now.day+2))
-        target_date.append(now.strftime('%Y-%m'))
+#    target_date=[]
+##    now=datetime.date.today()
+#    now=lmonth[-1]
+#    target_date.append(now.strftime('%Y-%m'))
+#    for i in range(numd):
+#        now=now+datetime.timedelta(days=-(now.day+2))
+#        target_date.append(now.strftime('%Y-%m'))
     month_freq={}
     key_set=dict_receive.keys()
     son_set=dict(list(data.groupby(sonitem))).keys()
