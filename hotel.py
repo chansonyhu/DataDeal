@@ -13,9 +13,9 @@ import json
 def jingying_month(filename='酒店数据',sheet="月份经营情况"):
     path="data/"
     try:
-        data = pd.read_excel(path+filename+".xls",sheetname=sheet,header=0)
+        data = pd.read_excel(path+filename+".xls",sheet_name=sheet,header=0)
     except:
-        data = pd.read_excel(path+filename+".xlsx",sheetname=sheet,header=0)
+        data = pd.read_excel(path+filename+".xlsx",sheet_name=sheet,header=0)
     
     row=data.index
     num_row=len(row)
@@ -33,9 +33,9 @@ def jingying_month(filename='酒店数据',sheet="月份经营情况"):
 def room_month(filename='酒店数据',sheet="月开房情况"):
     path="data/"
     try:
-        data = pd.read_excel(path+filename+".xls",sheetname=sheet,header=0)
+        data = pd.read_excel(path+filename+".xls",sheet_name=sheet,header=0)
     except:
-        data = pd.read_excel(path+filename+".xlsx",sheetname=sheet,header=0)
+        data = pd.read_excel(path+filename+".xlsx",sheet_name=sheet,header=0)
     
     row=data.index
     num_row=len(row)
@@ -51,9 +51,9 @@ def room_month(filename='酒店数据',sheet="月开房情况"):
 def type_month(filename='酒店数据',sheet="住客类型"):
     path="data/"
     try:
-        data = pd.read_excel(path+filename+".xls",sheetname=sheet,header=0)
+        data = pd.read_excel(path+filename+".xls",sheet_name=sheet,header=0)
     except:
-        data = pd.read_excel(path+filename+".xlsx",sheetname=sheet,header=0)
+        data = pd.read_excel(path+filename+".xlsx",sheet_name=sheet,header=0)
     
     row=data.index
     col=data.columns
@@ -93,9 +93,9 @@ def type_month(filename='酒店数据',sheet="住客类型"):
 def energy_month(filename='酒店数据',sheet="能耗"):
     path="data/"
     try:
-        data = pd.read_excel(path+filename+".xls",sheetname=sheet,header=0)
+        data = pd.read_excel(path+filename+".xls",sheet_name=sheet,header=0)
     except:
-        data = pd.read_excel(path+filename+".xlsx",sheetname=sheet,header=0)
+        data = pd.read_excel(path+filename+".xlsx",sheet_name=sheet,header=0)
     
     energy_dis={}
     col=data.columns
@@ -136,9 +136,9 @@ def energy_month(filename='酒店数据',sheet="能耗"):
     
     save={}
     try:
-        b_data = pd.read_excel(path+filename+".xls",sheetname="能耗预算",header=0)
+        b_data = pd.read_excel(path+filename+".xls",sheet_name="能耗预算",header=0)
     except:
-        b_data = pd.read_excel(path+filename+".xlsx",sheetname="能耗预算",header=0)
+        b_data = pd.read_excel(path+filename+".xlsx",sheet_name="能耗预算",header=0)
     
     col=b_data.columns
     num_col=len(col)
