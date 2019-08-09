@@ -74,16 +74,16 @@ def type_month(filename='hotel data',sheet="住客类型"):
             continue
         tp_m[col[i]]={}
         son_d=list(data[col[i]])
-        total=sum(son_d)
-        tp_m[col[i]]['total']=total
+#        total=sum(son_d)
+#        tp_m[col[i]]['total']=total
         for j in range(num_row):
             YTD_temp[j]+=son_d[j]
-            tp_m[col[i]][label[j]]=son_d[j]/total
-    total=sum(YTD_temp)
+            tp_m[col[i]][label[j]]=son_d[j]
+#    total=sum(YTD_temp)
     tp_m['YTD']={}
-    tp_m['YTD']['total']=total
+#    tp_m['YTD']['total']=total
     for j in range(num_row):
-        tp_m['YTD'][label[j]]=YTD_temp[j]/total
+        tp_m['YTD'][label[j]]=YTD_temp[j]
             
         
         
