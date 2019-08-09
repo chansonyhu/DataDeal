@@ -107,7 +107,7 @@ def distribute_by_item(data,f_item,s_item):
       
     return father_freq
 
-def interplay(data,filename='营销',sheet='关联设置'):
+def interplay(data,filename='sale data',sheet='关联设置'):
     path="data/"
     try:
         require_inter = pd.read_excel(path+filename+".xls",header=0,sheet_name=sheet)
@@ -133,7 +133,7 @@ def interplay(data,filename='营销',sheet='关联设置'):
 
 
 if __name__ == '__main__':
-    data=excel_to_dict(filename="营销")
+    data=excel_to_dict(filename="sale data")
     dis_acc=distribute_accumu(data)
     dis_inter=interplay(data)
     sale_statistics={}
