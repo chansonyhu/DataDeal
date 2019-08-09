@@ -10,7 +10,7 @@ import numpy as np
 import json
 
 
-def jingying_month(filename='酒店数据',sheet="月份经营情况"):
+def jingying_month(filename='hotel data',sheet="月份经营情况"):
     path="data/"
     try:
         data = pd.read_excel(path+filename+".xls",sheet_name=sheet,header=0)
@@ -30,7 +30,7 @@ def jingying_month(filename='酒店数据',sheet="月份经营情况"):
     return sale
 
 
-def room_month(filename='酒店数据',sheet="月开房情况"):
+def room_month(filename='hotel data',sheet="月开房情况"):
     path="data/"
     try:
         data = pd.read_excel(path+filename+".xls",sheet_name=sheet,header=0)
@@ -48,7 +48,7 @@ def room_month(filename='酒店数据',sheet="月开房情况"):
 
     return room
 
-def type_month(filename='酒店数据',sheet="住客类型"):
+def type_month(filename='hotel data',sheet="住客类型"):
     path="data/"
     try:
         data = pd.read_excel(path+filename+".xls",sheet_name=sheet,header=0)
@@ -90,7 +90,7 @@ def type_month(filename='酒店数据',sheet="住客类型"):
     return tp_m
 
 
-def energy_month(filename='酒店数据',sheet="能耗"):
+def energy_month(filename='hotel data',sheet="能耗"):
     path="data/"
     try:
         data = pd.read_excel(path+filename+".xls",sheet_name=sheet,header=0)
