@@ -89,8 +89,8 @@ def distribute_by_item(data,f_item,s_item):
     for f in set(data_f):
         num+=1
         father_key[f]=data_f.count(f)
-    if num>=5 and not(f_item=='年龄'):
-        num=5
+    if num>=3:
+        num=3
     main_f=dict(sorted(father_key.items(), key=lambda e: e[1],reverse=True)[:num]).keys()
     dict_receive=dict(list(data.groupby(f_item)))
     father_freq={}
