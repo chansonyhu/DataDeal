@@ -66,7 +66,7 @@ def generate_list(begin_date,end_date):
     
     return date_list
 
-def excel_to_dict(filename="收楼优惠券",interest_columns=['商家名称','销券时间']):
+def excel_to_dict(filename="coupon data",interest_columns=['商家名称','销券时间']):
     #对表头属性进行判断设置
     path="data/"
     try:
