@@ -42,7 +42,7 @@ def generate_list(begin_date,end_date):
     
     return date_list
 
-def excel_to_dict(filename="预约收楼",interest_columns=['楼盘名称','预约时间']):
+def excel_to_dict(filename="receive apartment",interest_columns=['楼盘名称','预约时间']):
     #对表头属性进行判断设置
     path="data/"
     try:
