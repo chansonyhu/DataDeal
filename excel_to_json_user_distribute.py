@@ -11,7 +11,7 @@ import pandas as pd
 import re
 
 #将最初的excel数据取目标属性列，转化为字典数据并返回
-def excel_to_dict(filename="forest life用户",interest_columns=['国家码','所属楼盘','注册时间']):
+def excel_to_dict(filename="forest life user",interest_columns=['国家码','所属楼盘','注册时间']):
     #对表头属性进行判断设置
     path="data/"
     try:
@@ -57,9 +57,9 @@ def country_distribute_aly(data):
     data_country=data['国家码']
     #读取国家码对照文件，用于最终将国家码转为国家名
     try:
-        country_no=pd.read_excel(path+"国家码.xls")[['国际域名缩写','电话代码']]
+        country_no=pd.read_excel(path+"country code.xls")[['国际域名缩写','电话代码']]
     except:
-        country_no=pd.read_excel(path+"国家码.xlsx")[['国际域名缩写','电话代码']]
+        country_no=pd.read_excel(path+"country code.xlsx")[['国际域名缩写','电话代码']]
     country_no=country_no.dropna()
     dict_country = country_no.set_index('电话代码').T.to_dict('list')
     del country_no
@@ -176,9 +176,9 @@ def month_country(data,num=2):
     dict_receive=dict(list(data.groupby('month')))
     path="data/"
     try:
-        country_no=pd.read_excel(path+"国家码.xls")[['国际域名缩写','电话代码']]
+        country_no=pd.read_excel(path+"country code.xls")[['国际域名缩写','电话代码']]
     except:
-        country_no=pd.read_excel(path+"国家码.xlsx")[['国际域名缩写','电话代码']]
+        country_no=pd.read_excel(path+"country code.xlsx")[['国际域名缩写','电话代码']]
     country_no=country_no.dropna()
     dict_country = country_no.set_index('电话代码').T.to_dict('list')
 
